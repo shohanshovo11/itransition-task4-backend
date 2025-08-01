@@ -74,5 +74,6 @@ app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+app.MapGet("/", () => Results.Ok("Welcome to Itransition"));
 
 app.Run();
