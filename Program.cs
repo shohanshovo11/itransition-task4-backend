@@ -38,7 +38,7 @@ builder.Services.AddCors(options =>
   options.AddPolicy("AllowAll", policy =>
   {
     policy
-          .WithOrigins("http://localhost:3000")
+          .WithOrigins("http://localhost:3000", "https://itransition-t4.netlify.app")
           .AllowAnyHeader()
           .AllowAnyMethod()
           .AllowCredentials();
